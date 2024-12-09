@@ -2,20 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+	position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.container2{
+	min-width: 1200px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.HomePage{
+	background-image: url(../public/Images/HomeBg.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.DestinationPage{
+	background-image: url(../public/Images/DestinationBg.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.CrewPage{
+	background-image: url(../public/Images/CrewBg.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.crewImg{
+	width: 400px auto;
+	height: 500px auto;
+}
+
+.TechnologyPage{
+	background-image: url(../public/Images/TechnologyBg.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.technologyImg{
+	width: 390px auto;
+	height: 390px auto;
+}
+
+.HomeSpan1{
+	width: 250px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.HomeSpan2{
+	width: 250px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border-radius: 50%;
+	z-index: 10;
+	transition: all 0.5s linear;
+	cursor: pointer;
+}
+
+.HomeSpan2:hover{
+	transform: scale(1.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 10%);
+	border-radius: 50%;
 }
